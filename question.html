@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/format.css">
+	<link rel="stylesheet" type="text/css" href="css/question.css">
+	<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+	<script type="text/javascript" src="js/question.js"></script>
+	<script type="text/javascript" src="js/makefontsize.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- 楼层 -->
+		<div class="floor fr">
+			<div class="floor_num">
+				<div class="num"><span>3F</span></div>
+			</div>
+			<div class="floor_num">
+				<div class="num"><span>2F</span></div>
+				<div class="animate">
+					<img src="img/animate.gif">
+				</div>
+			</div>
+			<div class="floor_num">
+				<div class="num"><span>1F</span></div>
+			</div>
+		</div>
+		<!-- 问题文本框 -->
+		<div class="question_block">
+			<div class="que_num">
+				<p>— <span>3</span> —</p>
+			</div>
+			<div class="question">
+				<p>保健食品外包装上必须标有标志及“保健食品”字样</p>
+			</div>
+			<div class="solid"></div>
+			<form>
+				<label for="ans1" class="active"><input type="radio" name="quest1" value="A" id="ans1" checked="checked">A、工程管理员</label>
+				<label for="ans2"><input type="radio" name="quest1" value="B" id="ans2">B、工程管理员</label>
+				<label for="ans3"><input type="radio" name="quest1" value="C" id="ans3">C、工程管理员</label>
+				<label for="ans4"><input type="radio" name="quest1" value="D" id="ans4">D、工程管理员</label>
+			</form>
+			<button class="submit"></button>
+		</div>
+		<!-- 云 -->
+		<div class="cloud">
+			<img src="img/cloud.png">
+		</div>
+		<!-- 信息栏 -->
+		<div class="msg">
+			<a href="#"><img src="img/msg.png"></a>
+		</div>
+		<!-- 答错后显示模拟框 -->
+		<div class="fail hid">
+			<div class="background"><img src="img/wrong.png"></div>
+		</div>
+	</div>
+</body>
+</html>

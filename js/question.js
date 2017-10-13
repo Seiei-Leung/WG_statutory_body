@@ -1,5 +1,4 @@
 $(function(){
-	/* 单选按钮，提交按钮 */
 	var 
 		$answer = {},obj = {},
 		url = '',//定义提交url
@@ -7,11 +6,12 @@ $(function(){
 		$ans_items = $('.question_block input'),
 		$submit = $('.question_block .submit');
 
-	/* 单选按钮点击，按钮样式改变 */
+	/* 单选按钮样式 */
 	$ans_label.click(function(){
 		$ans_label.removeClass('active');
 		$(this).addClass('active');
 	})
+
 	/* 点击提交 */
 	$submit.click(function(event){
 		event.preventDefault();
@@ -23,11 +23,9 @@ $(function(){
 		}
 		obj.type = 'GET';
 		obj.url = url + '?' + $.param($answer);//提交url
-		obj.success = function(data) {}
-		obj.error = function(XMLHttpResquest,textStatus,data) {alert(XMLHttpResquest.responseText)}
-		$.ajax(obj)
+		// obj.success = function(data) {}
+		// $.ajax(obj)
 	})
-	
 	/* 答案错误 */
 	/* 答错页面点击后测试 */
 	$('.fail').click(function(){

@@ -1,5 +1,5 @@
 $(function(){
-	/* 云 */
+	/* 云动画 */
 	var
 		$cloud = $('.cloud');
 	function cloud_animate() {

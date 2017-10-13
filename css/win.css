@@ -59,29 +59,3 @@ body{
 .msg img{
 	width: 1.5rem;
 }
-
-/* 输入信息页面 */
-.name{background-image: url('../img/name.png');}
-.phonenumb{background-image: url('../img/phonenumb.png');}
-.name,.phonenumb{
-	position: relative;
-	width: 6rem;
-	height: 15%;
-	margin-top: 0.5rem;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-
-}
-.name input,.phonenumb input{
-	position: absolute;
-	top:0;
-	bottom:0;
-	left:2rem;
-	margin:auto;
-	width: 3rem;
-	height: 1.5em;
-	line-height: 1.5em;
-	font-size: 1em;
-	text-indent: 1em;
-	background-color: #fedb7f
-}

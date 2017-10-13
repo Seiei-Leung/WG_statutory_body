@@ -1,0 +1,93 @@
+html{background-color: #fff}
+body{
+	position: relative;
+	background-color:#7bd9ff;
+	height: 100vh;
+	z-index: -10000;
+	overflow: hidden;
+}
+/* 楼层 */
+.background{
+	position:absolute;
+	bottom: -0.5em;
+}
+.background img{
+	width: 10rem;
+	height: 45vh
+}
+/* 动画人物 */
+.animate{
+	position: absolute;
+	left:50%;
+	bottom:26.5vh;
+}
+.animate img{
+	height: 3rem;
+}
+/* 云 */
+.cloud {
+	position: absolute;
+	top:2.5rem;
+	left: -1rem;
+	z-index: -10;
+}
+.cloud img{
+	height: 12rem;
+}
+/* 操作按钮 */
+.msg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 0.5rem;
+}
+.msg img{
+	width: 1.5rem;
+}
+/* 输入信息页面 */
+.content2{width: 10rem;padding-top: 1rem;}
+.congratulation {
+	display: block;
+	width: 6rem;
+	height:1.5rem;
+	margin-left: 2rem;
+}
+
+.name{background-image: url('../img/name.png');}
+.phonenumb{background-image: url('../img/phonenumb.png');}
+.name,.phonenumb{
+	position: relative;
+	float: left;
+	width: 4.2rem;
+	height: 0.75rem;
+	margin-top: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.6rem
+}
+.phonenumb{
+	margin-left: 0.4rem;
+}
+.name input,.phonenumb input{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:1.5rem;
+	margin:auto;
+	width: 2.5rem;
+	height: 1em;
+	line-height: 1.5em;
+	font-size: 1em;
+	background-color: #fedb7f;
+}
+.submit_btn button{
+	display: block;
+	width: 3.5rem;
+	height:1rem;
+	margin: auto;
+	margin-top: 0.5rem;
+	background-image: url('../img/submit_btn.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
+}

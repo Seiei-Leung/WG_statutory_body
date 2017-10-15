@@ -43,4 +43,5 @@ $(function(){
 		})
 	}
 	cloud_animate();
+
 })

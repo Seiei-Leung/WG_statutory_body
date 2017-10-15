@@ -16,12 +16,12 @@ body{
 	height: 45vh
 }
 /* 动画人物 */
-.animate{
+.winner_animate{
 	position: absolute;
 	left:50%;
 	bottom:26.5vh;
 }
-.animate img{
+.winner_animate img{
 	height: 3rem;
 }
 /* 庆祝 */

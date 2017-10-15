@@ -8,7 +8,9 @@ body{
 }
 /* 楼层 */
 .floor{
-	position: relative;
+	position: absolute;
+	bottom:30vh;
+	right:0;
 	height: 98vh;
 	width: 4.5rem;
 	background-color: #f9c262;
@@ -80,6 +82,11 @@ body{
 	width: 2rem;
 	height: 0.9rem
 }
+.back_btn {
+	display: none;
+	position: relative;
+	z-index: 100;
+}
 /* 进入按钮 */
 .entry_btn img{
 	width:2.5rem;
@@ -87,4 +94,171 @@ body{
 	position: absolute;
 	bottom:8%;
 	left: 28%;
+}
+/* 问题文本框 */
+.question_block_all {
+	box-sizing: border-box;
+	padding:0.5rem 1rem 0px 0.6rem;
+	color: #8c4105;
+	position: absolute;
+	top:25%;
+	left:5%;
+	background-image: url('../img/textframe.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 55%;
+	z-index: 2;
+	padding-bottom:0.8rem;
+	line-height: 1.5em;
+}
+.question_block_all .que_num{
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+.question_block_all .solid{
+	margin:0.5rem auto 0.5rem auto;
+	width: 80%;
+	height:3px;
+	background-image: url('../img/solid.png');
+	background-size: 100%;
+}
+.question_block_all label{
+	margin-left: 0.5em;
+	text-indent:1.5em;
+	line-height: 1.8em;
+	display: block;
+	background-image: url('../img/noactive.png');
+	background-size: 1em;
+	background-repeat: no-repeat;
+	background-position: 0em 0.5em;
+}
+.question_block_all label.active{
+	background-image: url('../img/active.png');
+}
+.question_block_all input{
+	display: none;
+}
+.question_block_all button {
+	display: block;
+	width: 40%;
+	height: 12%;
+	position: absolute;
+	bottom: -1em;
+	left: 25%;
+	background-color: transparent;
+	background-image: url('../img/btn.png');
+	background-size: 100% 100%;
+}
+/* 答错模拟框 */
+.fail {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 100vh;
+	background-color: rgba(0,0,0,.7);
+	z-index: 100000;
+}
+.fail_background img{
+	width: 8rem;
+	height: 10rem;
+	margin-left: 1rem;
+	position: absolute;
+	top:0;
+	bottom:0;
+	margin-top: auto;
+	margin-bottom: auto
+}
+/* 操作模拟框 */
+.operation {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10rem;
+	height: 100vh;
+	background-color: rgba(0,0,0,.7);
+	z-index: 10;
+}
+
+
+
+/* 登顶 */
+/* 楼层 */
+.background{
+	position:absolute;
+	bottom: -0.5em;
+}
+.background img{
+	width: 10rem;
+	height: 45vh
+}
+/* 动画人物 */
+.winner_animate{
+	position: absolute;
+	left:50%;
+	bottom:26.5vh;
+}
+.winner_animate img{
+	height: 3rem;
+}
+/* 庆祝 */
+.content {
+	margin-left:2rem;
+	padding-top: 1rem;
+	height: 50vh
+}
+.content .congratulation {
+	width: 6rem;
+	height: 20%
+}
+.content a img{
+	width: 6rem;
+	margin-top: 0.5rem;
+	height: 20%
+}
+/* 输入信息页面 */
+.content2{width: 10rem;padding-top: 1rem;}
+.content2 .congratulation {
+	display: block;
+	width: 6rem;
+	height:1.5rem;
+	margin-left: 2rem;
+}
+.name{background-image: url('../img/name.png');}
+.phonenumb{background-image: url('../img/phonenumb.png');}
+.name,.phonenumb{
+	position: relative;
+	float: left;
+	width: 4.2rem;
+	height: 0.75rem;
+	margin-top: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 0.6rem
+}
+.phonenumb{
+	margin-left: 0.4rem;
+}
+.name input,.phonenumb input{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:1.5rem;
+	margin:auto;
+	width: 2.5rem;
+	height: 1em;
+	line-height: 1.5em;
+	font-size: 1em;
+	background-color: #fedb7f;
+}
+.submit_btn button{
+	display: block;
+	width: 3.5rem;
+	height:1rem;
+	margin: auto;
+	margin-top: 0.5rem;
+	background-image: url('../img/submit_btn.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
 }

@@ -11,9 +11,11 @@
 	<script type="text/javascript" src="js/makefontsize.js"></script>
 </head>
 <body>
-	<div class="container">
 		<!-- 楼层 -->
 		<div class="floor fr">
+			<div class="floor_num">
+				<div class="num"><span>3kF</span></div>
+			</div>
 			<div class="floor_num">
 				<div class="num"><span>2F</span></div>
 			</div>
@@ -41,12 +43,94 @@
 		</div>
 		<!-- 操作按钮 -->
 		<div class="msg">
-			<a href="#"><img src="img/msg.png"></a>
+			<a class="msg_btn" href="javascript:void(0)"><img src="img/msg.png"></a>
+			<a class="back_btn" href="javascript:void(0)"><img src="img/back_btn.png"></a>
 		</div>
 		<!-- 进入按钮 -->
 		<div class="entry_btn">
-			<a href="#"><img src="img/go_btn.png"></a>
+			<a href="javascript:void(0)"><img src="img/go_btn.png"></a>
 		</div>
-	</div>
+		<!-- 问题文本框 -->
+		<div class="question_block question_block_all" style="display: none">
+			<!-- 第一题 -->
+			<div class="question_content question_content1">
+				<div class="que_num">
+					<p>— <span>1</span> —</p>
+				</div>
+				<div class="question">
+					<p>保健食品外包装上必须标有标志及“保健食品”字样</p>
+				</div>
+				<div class="solid"></div>
+				<form>
+					<label for="quest1_ans1" class="active"><input type="radio" name="quest1" value="A" id="quest1_ans1" checked="checked">A、工程管理员</label>
+					<label for="quest1_ans2"><input type="radio" name="quest1" value="B" id="quest1_ans2">B、工程管理员</label>
+					<label for="quest1_ans3"><input type="radio" name="quest1" value="C" id="quest1_ans3">C、工程管理员</label>
+					<label for="quest1_ans4"><input type="radio" name="quest1" value="D" id="quest1_ans4">D、工程管理员</label>
+				</form>
+			</div>
+			<button class="submit"></button>
+		</div>
+		<div class="question_block2 question_block_all" style="display: none">
+			<!-- 第一题 -->
+			<div class="question_content question_content6">
+				<div class="que_num">
+					<p>— <span>6</span> —</p>
+				</div>
+				<div class="question">
+					<p>保健食品外包装上必须标有标志及“保健食品”字样</p>
+				</div>
+				<div class="solid"></div>
+				<form>
+					<label for="quest6_ans1" class="active"><input type="radio" name="quest6" value="A" id="quest6_ans1" checked="checked">A、工程管理员</label>
+					<label for="quest6_ans2"><input type="radio" name="quest6" value="B" id="quest6_ans2">B、工程管理员</label>
+					<label for="quest6_ans3"><input type="radio" name="quest6" value="C" id="quest6_ans3">C、工程管理员</label>
+					<label for="quest6_ans4"><input type="radio" name="quest6" value="D" id="quest6_ans4">D、工程管理员</label>
+				</form>
+			</div>
+			<button class="submit"></button>
+		</div>
+		<!-- 答错后的模拟框 -->
+		<div class="fail" style="display: none">
+			<div class="fail_background"><img src="img/wrong.png"></div>
+		</div>
+		<!-- 操作模拟框 -->
+		<div class="operation" style="display: none">
+			<div class="operation_background">
+				<p></p>
+			</div>
+		</div>
+		<!-- 登顶 -->
+		<div class="winner" style="display: none">
+			<!-- 楼顶 -->
+			<div class="background">
+				<img src="img/win_floor.png">
+			</div>
+			<!-- 动画人物 -->
+			<div class="winner_animate">
+				<img src="img/win.gif">
+			</div>
+			<div class="content">
+				<!-- 庆祝图片 -->
+				<img class="congratulation" src="img/congratulation.png">
+				<a href="javascript:void(0);" class="continue"><img src="img/continue.png"></a>
+				<a href="javascript:void(0);" class="lotto"><img src="img/lotto.png"></a>
+			</div>
+			<div class="content2" style="display: none;">
+				<!-- 庆祝图片 -->
+				<img class="congratulation" src="img/congratulation.png">
+				<!-- 输入姓名 -->
+				<div class="name">
+					<input type="text" name="name">
+				</div>
+				<!-- 输入电话 -->
+				<div class="phonenumb">
+					<input type="text" name="phonenumb">
+				</div>
+				<div class="clearfix"></div>
+				<div class="submit_btn">
+					<button></button>
+				</div>
+			</div>
+		</div>
 </body>
 </html>
